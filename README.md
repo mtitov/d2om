@@ -15,7 +15,7 @@ This project was encouraged by other ORMs such as autumn and mostly by peewee.
 
 
 
-Example
+Examples
 =====
 
 Model definition:
@@ -33,11 +33,11 @@ Model definition:
 
     class User(Model):
 
-         userid = Field('user_id', Type.Number).primary()
-         name = Field('name', Type.Varchar)
-         score = Field('score', Type.FloatType).default('10.0')
-         description = Field('description', Type.Varchar).nullable()
-         creationdate = Field('creation_date', Type.Datetime)
+        userid = Field('user_id', Type.Number).primary()
+        name = Field('name', Type.Varchar)
+        score = Field('score', Type.FloatType).default('10.0')
+        description = Field('description', Type.Varchar).nullable()
+        creationdate = Field('creation_date', Type.Datetime)
 
         class Meta:
             database = MySQLDatabase(**connection_parameters)
